@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-OPTIMIZED Distributed Quantum Noise-Induced Reservoir Computing for NARMA2
+Distributed Quantum Noise-Induced Reservoir Computing for NARMA2
 Major improvements for better R² scores and NARMA2 prediction accuracy
 """
 
