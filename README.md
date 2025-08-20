@@ -1,14 +1,27 @@
-A lightweight implementation of Noise induced Quantum Reservoir Computing (QRC) using noise as a computational resource. This project explores the use of quantum decoherence and noise to enhance or regulate the computational dynamics of quantum reservoirs in temporal learning tasks.
+# Quantum Noise-Induced Reservoir Computing (QNR)
 
-** Overview**
 
-Quantum Reservoir Computing (QRC) is a hybrid quantum-classical framework that leverages the complex dynamics of quantum systems for machine learning tasks, especially those 
-involving temporal patterns. In this implementation, we:
+## Overview
+This project implements **Quantum Noise-Induced Reservoirs (QNRs)** — a framework where quantum noise, often considered detrimental, is instead used as a **computational resource** for temporal information processing.
 
-This script implements the parallel spatial multiplexing architecture, configured for a large-scale(50,000) benchmark test.
+**Key idea:**
+- A noiseless quantum circuit may fail to retain input information.
+- Introducing noise channels (e.g., amplitude damping, depolarization, phase-flip, unitary imperfections) enables meaningful input-driven dynamics.
+- This turns noisy intermediate-scale quantum (NISQ) devices into powerful **reservoir computers**.
 
-Simulate a quantum reservoir composed of complex quantum circuit with different kinds of qubit entanglement.
+---
 
-Introduce and control various types of quantum noise (e.g., depolarizing, amplitude damping, phase noise).
+##  Features
+- Simulation of QNRs with various noise models:
+  - Amplitude damping
+  - Phase damping
+  - Depolarization
+  - Bit-flip, Phase-flip
+  - Unitary noise (CNOT bias, unintended entanglement)
+- Benchmarks:
+  - **NARMA2** sequence prediction
+- Experiments on **IBM Quantum devices** (via Qiskit).
 
-Demonstrate the utility of noisy quantum reservoirs in temporal tasks such as memory capacity and nonlinear autoregressive moving average (NARMA) prediction( Benchmark for reservoir computing).
+---
+
+Make sure all the dependencies are installed (both python and qiskit are required.)
